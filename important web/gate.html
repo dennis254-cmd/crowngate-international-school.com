@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CrownGate International Christian School Blog</title>
+  <link rel="stylesheet" href="gate.css"/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo-and-search">
+        <img src="voll.PNG" alt="CrownGate Logo" class="logo-img"/>
+        <span class="logo-text"> CrownGate ICS</span>
+        <form class="search-form" id="searchForm">
+          <input type="text" placeholder="Search..." aria-label="Search"/>
+          <button type="submit"><span>&#128269;</span></button>
+        </form>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#volunteers">Volunteers</a></li>
+        <li><a href="#proverbs">Proverbs</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="loginBtn">Login</a></li>
+        <li><a href="#" id="signupBtn">Register</a></li>
+        <li class="dropdown">
+          <select id="langSelect" aria-label="Choose Language">
+            <option value="en">English</option>
+            <option value="sw">Swahili</option>
+            <option value="fr">French</option>
+          </select>
+        </li>
+        <li>
+          <button id="accessBtn" title="Change accessibility" aria-label="Change accessibility">
+            <span>&#128065;</span>
+          </button>
+        </li>
+      </ul>
+      <div class="mobile-menu-icon" id="menuToggle">&#9776;</div>
+    </nav>
+    <div class="sub-nav">
+      <a href="#help">Help & Support</a>
+      <a href="#terms">Terms & Conditions</a>
+      <a href="#privacy">Privacy Policy</a>
+    </div>
+  </header>
+
+  <!-- Carousel Hero Section -->
+  <section id="home" class="hero-carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide active" style="background-image: url('Capture.PNG');"></div>
+      <div class="carousel-slide" style="background-image: url('class.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('sun.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('hook.jpg');"></div>
+      <div class="carousel-slide" style="background-image: url('wave.jpg');"></div>
+      
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to CrownGate International Christian School</h1>
+      <p>A Christian learning space where children flourish spiritually and emotionally</p>
+      <button class="hero-btn" onclick="window.location='#about'">Learn More</button>
+    </div>
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <main>
+    <section id="about" class="section">
+      <h2>About Us</h2>
+      <p>
+        CrownGate International Christian School is a new Christian kindergarten to meet the pressing need for a decent, value-based early learning center in our community.
+      </p>
+      <ul>
+        <li>Savoria Academy – Holiday enrichment program for life skills: emotional growth, self-awareness, sports, swimming, financial literacy, health education, cookery, art, theatrical art, football, orienteering, creative exploration.</li>
+        <li>Natural science lessons - learning by seeing and touching, not just textbooks or computers.</li>
+        <li>Cooperation with European partners for intercultural learning.</li>
+      </ul>
+      <div class="vision">
+        <h3>Our Vision 🌻🌻🌻</h3>
+        <p>Based on God's values, creating a learning space where children flourish spiritually and emotionally.</p>
+        <blockquote>Train up a child in the way he should go: and when he is old, he will not depart from it.</blockquote>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Our Education</h2>
+      <p>
+        At Crown Gate Pre School we accept children aged 3 to 7 years. Our goal is to provide children with preschool education and help them discover the hidden talents that the Creator has already put in them.
+      </p>
+      <h3>Primary 🌻🌻🌻</h3>
+      <p>
+        Crown Gate International School is an example of consistency, stability, and improvement. At CGIS, learning is a unique adventure in life. Our comprehensive development program and wonderful teachers help reveal the talents and gifts in each child.
+      </p>
+    </section>
+
+    <!-- Custom Gallery Carousel -->
+    <section id="gallery" class="section gallery">
+      <h2>Gallery</h2>
+      <div class="gallery-carousel">
+        <button class="gallery-arrow left" id="galleryPrev">&#10094;</button>
+        <div class="gallery-images" id="galleryImages">
+          <img src="josh.PNG" alt="Kids learning" class="active"/>
+          <img src="art.PNG" alt="Art class"/>
+          <img src="out.PNG" alt="Outdoor activities"/>
+          <img src="mon.PNG" alt="Classroom"/>
+          <img src="foot.PNG" alt="Football activities"/>
+          <img src="unity.PNG" alt="Unity activities"/>
+          <img src="creative.PNG" alt="Creative activities"/>
+          <img src="unity.PNG" alt="Unity activities"/>
+        </div>
+        <button class="gallery-arrow right" id="galleryNext">&#10095;</button>
+      </div>
+      <div class="gallery-caption" id="galleryCaption">Kids learning</div>
+    </section>
+
+    <section id="volunteers" class="section">
+      <h2>For Volunteers</h2>
+      <p>
+        We are looking for passionate individuals ready to join our big family at CGIS in Kenya. Your experience and talents can help shape the lives of these children. We welcome builders, tilers, plumbers, painters, landscape designers, artists, teachers, theater artists, musicians, and anyone with a kind heart and desire to teach and create together.
+      </p>
+    </section>
+
+    <section id="proverbs" class="section">
+      <h2>Proverbs and Sayings of Famous People</h2>
+      <ul class="proverbs-list">
+        <li>🔷"To speak in a foreign language means to win his peace and culture" – Frantz Fanon</li>
+        <li>🔸Akili ni mali</li>
+        <li>🔹Asiyesikia la mkuu huvunjika guu.</li>
+        <li>🔸"The world is a book. And whoever has not traveled through it has read only one page." – St. Augustine</li>
+        <li>🔹Show me, O Lord, Your ways, and teach me Your paths. (Psalm 25:4 David)</li>
+        <li>🔸You can't buy good manners at the market (Georgian proverb)</li>
+        <li>🔹Teach another, and you yourself will become wiser. (Ukrainian proverb)</li>
+        <li>🔸Let the children come to Me for such is the kingdom of heaven (Jesus Christ)</li>
+        <li>🔹Haba na haba hujaza kibaba.</li>
+        <li>🔸A drop wears away a stone (International Proverb)</li>
+        <li>🔹If you understand why you were born, you will understand everything else. (Greek proverb)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm" class="styled-form">
+        <div class="form-row">
+          <div><label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" required/></div>
+          <div><label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" required/></div>
+        </div>
+        <div class="form-row">
+          <div><label for="email">Email *</label>
+          <input type="email" id="email" name="email" required/></div>
+          <div><label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone"/></div>
+        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit" class="form-btn">Send Message</button>
+      </form>
+      <div id="contactStatus"></div>
+    </section>
+  </main>
+
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeLogin">&times;</span>
+      <h2>Login</h2>
+      <form id="loginForm" class="styled-form">
+        <label for="loginEmail">Email *</label>
+        <input type="email" id="loginEmail" name="loginEmail" required/>
+        <label for="loginPassword">Password *</label>
+        <input type="password" id="loginPassword" name="loginPassword" required/>
+        <button type="submit" class="form-btn">Login</button>
+      </form>
+      <div id="loginStatus"></div>
+    </div>
+  </div>
+
+  <!-- Signup Modal -->
+  <div id="signupModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeSignup">&times;</span>
+      <h2>Register</h2>
+      <form id="signupForm" class="styled-form">
+        <label for="signupEmail">Email *</label>
+        <input type="email" id="signupEmail" name="signupEmail" required/>
+        <label for="signupPassword">Password *</label>
+        <input type="password" id="signupPassword" name="signupPassword" required/>
+        <button type="submit" class="form-btn">Register</button>
+      </form>
+      <div id="signupStatus"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#national">National</a>
+      <a href="#counties">Counties</a>
+      <a href="#help">Help & Support</a>
+      <a href="#terms">Terms & Conditions</a>
+      <a href="#privacy">Privacy Policy</a>
+    </div>
+    <p>&copy; 2025 CrownGate International Christian School. All rights reserved.</p>
+  </footer>
+  <script src="gate.js"></script>
+</body>
+</html>
